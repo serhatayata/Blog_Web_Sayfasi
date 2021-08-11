@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-14-Blog</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="Website-BlogCSS.css">    
+<script type="text/javascript" src="../js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- EN USTE CIK -->
+<a class="en_uste_cik" type="button" href="#"></a>
+<!-- ---------------------------------------------------------- -->
+<header>
+   <!-- NAVIGATOR -->
+   <nav class="navbar sticky-top navbar-primary navbar-expand-md bg-secondary nav-fill nav-tabs" id="navbar-1">
+    <!-- BRAND -->
+    <span class="navbar-brand h1">
+    <span class="brandtitle" id="brandId"><img src="../img/S.png" width="35px" height="35px"> BLOG</span>
+    </span>
+    <!-- BUTTON -->
+    <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse" data-target="#navbarMenu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- ITEMS -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="navbar-nav nav-primary bg-secondary h5">
+    <li class="nav-item"><a href="../Blog-Web.html" class="nav-link">Ana Sayfa</a></li>
+    <li class="nav-item"><a href="Website-Blog-Basliklar.html" class="nav-link">Başlıklar</a></li>
+    </ul>
+    </div>
+    <span id="date1"></span>
+</nav>
+</header>  
+<main>
+<section id="sectionA">
+<!-- SAYFA1 -->
+<div class="container-fluid sayfa1">
+<!-- BASLIK -->
+<div class="row baslik-alani">
+    <div class="col-12 col-sm-12 baslik">
+        <h1>Javascript Hoisting</h1>
+    </div>
+</div>
+<!-- RESIM -->
+<div class="row resim-alani">
+    <div class="col-2"></div>
+    <div class="col-8 col-sm-8 baslik-resim">
+        <img src="../img/Blog-1-resim.jpeg" id="baslik-resim1">
+    </div>
+    <div class="col-2 col-sm-2"></div>
+</div>
+<!-- PARAGRAF1 -->
+<div class="row paragrafAlani">
+    <div class="col-2"></div>
+    <div class="col-8 col-sm-8 paragraf">
+        <div class="row">
+            <div class="col-12 col-sm-12 yazi">
+                Javascript içerisinde bir değişken kullanıldıktan sonra da tanımlanabilir. Ancak bu durum var, let ve const içinde değişkenlik göstermektedir. Örneklerle devam edelim;
+            </div>
+            <div class="col-12 col-sm-12 ic-resim">
+                <div class="col-10 col-sm-10 offset-1 ic-resim">
+                    <img src="../img/hoisting-1.png" id="hoisting-1">
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="col-12 col-sm-12 yazi">
+                Burada x=5 ataması, değer kullandıktan sonra değişkene tanımlanmıştır. Ancak Javascript var değişkenini her zaman en başta yazılmış gibi kabul eder bu nedenle var değişkeni herhangi bir yerde tanımlanabilir.
+            </div>     
+        </div>
+        <div class="row" style="justify-content: center;">
+            <div>
+             <a class="btn btn-primary bg-primary btn-paragraf" href="../Website-Blog/Website-Blog-Yazilar/Javascript Hoisting/Javascript_Hoisting.html">Devamı...</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</div>
+</div>
+<!-- SAYFA2 -->
+<div class="container-fluid sayfa1">
+    <!-- BASLIK -->
+    <div class="row baslik-alani">
+        <div class="col-12 col-sm-12 baslik">
+            <h1>Javascript Scope Kavramı</h1>
+        </div>
+    </div>
+    <!-- RESIM -->
+    <div class="row resim-alani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 baslik-resim">
+            <img src="../img/Blog-2-resim.jpeg" id="baslik-resim1">
+        </div>
+        <div class="col-2 col-sm-2"></div>
+    </div>
+    <!-- PARAGRAF1 -->
+    <div class="row paragrafAlani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 paragraf">
+            <div class="row">
+                <div class="col-12 col-sm-12 yazi">
+                    <p><strong>Scope(Kapsam) nedir ?</strong></p>
+                    <p>Block Scope ve Function Scope.</p>
+                    <p><strong>Scope türleri nelerdir?</strong></p>
+                    <p>Global Scope ve Local Scope olmak üzere iki türü vardır. Local scope ise kendi içinde ikiye ayrılır; </p>
+                    <p>Block Scope ve Function Scope.</p>
+                    <p><u><strong>Global Scope</strong></u> : Fonksiyonların ya da for, if veya while bloklarının dışında tanımlanan değişkenlere sahip olan scope türüdür.</p>
+                    <p><u><strong>Local Scope</strong></u> : Global Scope içerisinde belirtilen yapılarda tanımlanmış ve sadece tanımlandığı alan içerisinden ulaşılabilen değişkenlerin sahip olduğu scope türüdür.</p>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div>
+                 <a class="btn btn-primary bg-primary btn-paragraf" href="../Website-Blog/Website-Blog-Yazilar/Javascript Scope Kavrami/Javascript_Scope_Kavrami.html">Devamı...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+<!-- SAYFA3 -->
+<div class="container-fluid sayfa1">
+    <!-- BASLIK -->
+    <div class="row baslik-alani">
+        <div class="col-12 col-sm-12 baslik">
+            <h1>Veritabanı İlişki Türleri</h1>
+        </div>
+    </div>
+    <!-- RESIM -->
+    <div class="row resim-alani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 baslik-resim">
+            <img src="../img/Blog-3-resim.jpeg" id="baslik-resim1">
+        </div>
+        <div class="col-2 col-sm-2"></div>
+    </div>
+    <!-- PARAGRAF1 -->
+    <div class="row paragrafAlani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 paragraf">
+            <div class="row">
+                <div class="col-12 col-sm-12 yazi">
+                    <p>Bu yazımda veri tabanı ilişki türlerini anlatmaya çalıştım.</p>
+                    <p>Bu yazıyı okumadan önce Primary Key ve Foreign Key kavramları hakkında bilgi edinmenizi tavsiye ederim.</p> 
+                    <p>İyi okumalar.</p>
+                    <p><strong>Üç adet ilişki tipi bulunmaktadır;</strong></p>
+                    <p>Bire-bir ilişki, Bire-çok ilişki(1-n) ve Çoka-çok ilişki(n-m).</p>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div>
+                 <a class="btn btn-primary bg-primary btn-paragraf" href="Website-Blog-Yazilar/Veritabani iliski Turleri/Veritabani_iliski_turleri.html">Devamı...</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+<!-- SAYFA4 -->
+<div class="container-fluid sayfa1">
+    <!-- BASLIK -->
+    <div class="row baslik-alani">
+        <div class="col-12 col-sm-12 baslik">
+            <h1>Responsive Tasarım</h1>
+        </div>
+    </div>
+    <!-- RESIM -->
+    <div class="row resim-alani">
+        <div class="col-4"></div>
+        <div class="col-4 col-sm-4 baslik-resim">
+            <img src="../img/Blog-4-resim.jpeg" id="baslik-resim1">
+        </div>
+        <div class="col-4 col-sm-4"></div>
+    </div>
+    <!-- PARAGRAF1 -->
+    <div class="row paragrafAlani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 paragraf">
+            <div class="row">
+                <div class="col-12 col-sm-12 yazi">
+                    <p>Responsive tasarım, uyumlu ve duyarlı web tasarım anlamına gelir.</p>
+                    <p>2010 yılında ortaya çıkan bu web tasarım şekli son bir kaç yıldır dünyada ve ülkemizde popüler oldu.</p>
+                    Web sitesine farklı tablet ve mobil gibi farklı cihazlardan giriş yapıldığında sitede bulunan resim, yazı vb. elementlerin ekranın boyutuna göre yeniden şekil alıp düzgün bir biçimde görüntülenmesi amaçlanmıştır.
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div>
+                 <a class="btn btn-primary bg-primary btn-paragraf" href="../Website-Blog/Website-Blog-Yazilar/Responsive Tasarım/Responsive_Tasarim.html">Devamı...</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+<!-- SAYFA5 -->
+<div class="container-fluid sayfa1">
+    <!-- BASLIK -->
+    <div class="row baslik-alani">
+        <div class="col-12 col-sm-12 baslik">
+            <h1>SQL Nedir ve Nasıl Kullanılır?</h1>
+        </div>
+    </div>
+    <!-- RESIM -->
+    <div class="row resim-alani">
+        <div class="col-3"></div>
+        <div class="col-6 col-sm-6 baslik-resim">
+            <img src="../img/Blog-5-resim.jpeg" id="baslik-resim1">
+        </div>
+        <div class="col-3 col-sm-3"></div>
+    </div>
+    <!-- PARAGRAF1 -->
+    <div class="row paragrafAlani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 paragraf">
+            <div class="row">
+                <div class="col-12 col-sm-12 yazi">
+                    <p>SQL (Structured Query Language) kullanımı veri tabanı olarak değil, veritabanının içindeki düzenleyicilerden bir tanesi olarak kullanılmaktadır. SQL kullanımının amacı, veritabanı içerisinde yer alan verilerin düzene koyulması ve kolay şekilde yönetilmesini sağlamaktadır.</p>
+                    <p><strong>SQL Kullanımının Avantajları ve Özellikleri</strong></p>
+                    <ul>
+                        <li>Kullanıcıların kolaylıkla verilere erişmesini sağlamaktadır.</li>
+                        <li>Veriler için açıklama hazırlanmasına ve kolayca kategorize edilmelerine izin vermektedir.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div>
+                 <a class="btn btn-primary bg-primary btn-paragraf" href="../Website-Blog/Website-Blog-Yazilar/SQL Nedir/SQL_Nedir.html">Devamı...</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+</section>
+</main>
+<footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-12 footer1">
+         <p>&copy;2021 - created by Serhat Ayata</p>
+        </div>
+    </div>
+</div>
+</footer>
+<script type="text/javascript" src="../js/Website14_Blog.js"></script>
+</body>
+</html>

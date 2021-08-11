@@ -1,0 +1,11 @@
+.resim-5x {height: 250px !important; margin:30px 0px !important;}
+
+@media screen and  (max-width:768px) {
+ .resim-5x {height: 150px !important; margin:20px 0px !important;}
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .resim-5x {height: 180px !important; margin:20px 0px !important;}
+   }
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .resim-5x {height: 220px !important; margin:20px 0px !important;}
+}

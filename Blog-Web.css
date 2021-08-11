@@ -1,0 +1,281 @@
+/* GENEL KODLAR */
+* {box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 12px;}
+body {background-color:white;}
+html {scroll-behavior:smooth;}
+/* --------------------------------------------------- */
+/* TITLES */
+.title-ozgecmis,.title-blog,.sayfa4-title {background-color: rgb(171, 171, 248);}
+/* --------------------------------------------------- */
+header {display: none;}
+.navbar-nav .nav-item a{color: black !important; font-weight: bold;}
+/* SAYFA1 SOL */
+main {display: flex; flex-wrap: wrap;}
+.sayfa1sol {
+    flex-basis: 20%;
+    position: sticky;
+    top: 0;
+    background-color: black; 
+    height: 100vh;
+    background: -webkit-linear-gradient(135deg,white,rgb(149, 149, 241)); /* Chrome10+,Safari5.1+ */}
+.sayfa1sol .pp1 {width: 80%; margin-left: 10%;}
+.sayfa1sol .pp1 img {border-radius: 100px; margin-top: 20px; width: 100%; height: auto;}
+.sayfa1sol .nameSurname h2 {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold; font-style: italic;
+    transition:color 1s ease-in;}
+.sayfa1sol .sidebar-nav .nav-link {
+    color: blue;
+    padding:20px;
+    text-align: justify;
+    font-size: 1.5rem; font-weight: bold;
+    border-radius: 20px;}
+.sayfa1sol .sidebar-nav .nav-link:hover {background-color: rgba(143, 137, 137, 0.144);}
+.links {display: flex; justify-content:center; margin-top: 20px;  }
+.sayfa1solEnAlt {text-align: center; color: blue; margin-top: 12px;}
+/* SAYFA1 SAG */
+.sayfa1sag {
+    flex-basis: 80%;
+    height: 100vh;
+    background: url("img/bg1.jpg") center center no-repeat;
+    background-size: cover;}
+.sayfa1sag p {color: white;}
+.sayfa1sagHeader {
+    text-align: center;
+    font-size: 3.8rem; 
+    margin-top: 25%;
+    font-weight: bold;
+    font-style: italic;}
+/* ---------------------------------------------------------------------------------- */
+/* SAYFA2 */
+.title1 {font-size: 2rem;font-weight: bold ; text-align: center; margin-top: 25px; }
+.sayfa2sol {height: 100vh; flex-basis: 20%;}
+.sayfa2sag {height: 100vh; flex-basis: 80%; display: flex; flex-wrap: wrap; background-color: whitesmoke;}
+.sayfa2sag_1,.sayfa2sag_2,.sayfa2sag_3,.sayfa2sag_4 {height: 42%; flex-basis: 50%;border: 1px dotted rgb(110, 110, 238) ; padding: 20px;  background-color: whitesmoke;}
+.sayfa2sag_1 .egitimTitle{
+    text-align: center;
+    font-size: 1.3rem !important; font-weight: bold; border-bottom: 1px dotted rgb(110, 110, 238); padding-bottom: 10px;}
+.sayfa2sag_1 .sayfa2sag1_1_1, .sayfa2sag1_1_2 {padding: 10px;}
+.sayfa2sag_1 .sayfa2sag1_1_1{
+    font-size: 1.2rem; text-align: center; padding-top: 35px; font-weight: bold; height: 10px;}
+.sayfa2sag_1 .sayfa2sag1_1_2 {font-size: 1rem; text-align: center; margin-top: 10px; padding: 8px 0px 0px 0px; font-weight: bold;}
+.yer {text-decoration: underline;}
+/* --------------------------------------------------------------------------------- */
+.sayfa2sag_2 div p {font-size: 1rem;}
+.beceriTitle {text-align: center;
+    font-size: 1.3rem !important; font-weight: bold; border-bottom: 1px dotted rgb(110, 110, 238); padding-bottom: 10px; margin-bottom: 15px;}
+.first-progress {margin-top: 4px !important;}
+.progress {padding-left: 0px; height: 15px; margin-top: 14px;}
+/* --------------------------------------------------------------------------------- */
+.deneyimTitle {text-align: center;
+    font-size: 1.3rem !important; font-weight: bold; border-bottom: 1px dotted rgb(110, 110, 238); padding-bottom: 10px; margin-bottom: 30px;}
+.deneyim1 {margin-top: 0px;}
+.deneyim2 {margin-top: 10px;}
+.deneyim1 p,.deneyim2 p {margin:0px !important;}
+.sayfa2sag2_1_1{
+    font-size: 1.3rem; text-align: center; padding-top: 10px; font-weight: bold; height: 45px; }
+.sayfa2sag2_1_2 {font-size: 1rem; text-align: center;  padding-top:5px; font-weight: bold;}
+/* -------------------------------------------------------------------------------- */
+.sayfa2sag3_1_1{
+    font-size: 1.2rem; margin-top: 15px; font-weight: bold; height: 60px;}
+.sayfa2sag3_1_2 {font-size: 1rem; margin-top: 16px; margin-bottom:38px; padding: 0px !important; font-weight: bold; height: 40px;}
+.sayfa2sag3_1_3 {font-size: 0.8rem; margin-top: 20px; margin-bottom:38px; padding: 0px !important; font-weight: bold; height: 40px;}
+.number1 {padding:0 !important;}
+.blue {color: rgb(110, 110, 238);}
+/* ------------------------------------------------------------------------------- */
+/* SAYFA 3 */
+.title-blog {height: 70px;}
+.title2 {font-size: 2rem;font-weight: bold ; text-align: center;margin-left: 38%; margin-top: 20px;}
+.sayfa3sol {flex-basis: 20%; height: 100vh;}
+.sayfa3sag {height: 100vh; flex-basis: 80%; display: flex; flex-wrap: wrap; background-color: whitesmoke;}
+.sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 43%; flex-basis: 50%; border: 1px dotted rgb(110, 110, 238) ;}
+#blog1resimId {height: 110px; width: 300px; margin-left: 20%; margin-top: 2%;}
+.blog1 {padding: 40px;}
+.blog-1 p,.blog-2 p,.blog-3 p,.blog-4 p {font-size:1.1rem; font-weight: bold; text-align: justify; margin-top: 10px; padding: 0px 10px;}
+.blog-title {font-size: 1.4rem !important; text-align: center !important; text-decoration: underline;}
+.sayfa3sag .btn1 {margin-left: 40%; font-size: 1.1rem;}
+.sayfa3sag .btn2 {margin-left: 24%; font-size: 1.1rem; width: 240px; height: 30px; float: right;}
+/* -------------------------------------------------------------------------------- */
+/* SAYFA4 */
+.sayfa4sol {height: 100vh; flex-basis: 20%;}
+.sayfa4sag {height: 100vh; flex-basis: 80%; background-color: whitesmoke;}
+.sayfa4-title p {font-size: 2.2rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+.form-1 {width: 100%; height: 65vh;}
+.labels {font-size:1.2rem; font-weight: bold; margin-top: 10px;}
+.e-mail-iletisim {font-size: 1.2rem; margin-left: 15%;}
+.tel-iletisim {font-size: 1.2rem; margin-left: 5%;}
+/* ----------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1200px) and (max-width:1365px)
+{
+/* SAYFA 1 */
+header {display: none;}
+.sayfa1sol .nameSurname h2 {font-size: 1.4rem;} .sayfa1sol .sidebar-nav .nav-link {font-size: 1.3rem;}
+.links {margin-top: 20px;}  .sayfa1solEnAlt {margin-top: 10px;}
+/* SAYFA 2 */
+.title1 {font-size: 2rem;font-weight: bold ; text-align: center; margin-top: 25px; }
+.sayfa2sag_1 .sayfa2sag1_1_1{
+    font-size: 1.1rem; text-align: center; padding-top: 35px; font-weight: bold; height: 10px;}
+.sayfa2sag_1 .sayfa2sag1_1_2 {font-size: 1rem;}
+.progress {margin-top: 14.5px;}
+/* ------------------------------------------------------------------------------------------------ */
+.sayfa2sag2_1_1{font-size: 1rem; }
+.sayfa2sag2_1_2 {font-size: 1rem;padding-top:3px;}
+/* ----------------------------------------------------------------------------------------------- */
+.sayfa2sag3_1_1{font-size: 1rem;}
+.sayfa2sag3_1_2 {font-size: 1rem; margin-top: 14px;}
+.sayfa2sag3_1_3 {font-size: 0.8rem; margin-top: 16px;}
+/* SAYFA3 */
+.sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 43%; flex-basis: 50%; border: 1px dotted rgb(110, 110, 238) ;}
+#blog1resimId {height: 100px;margin-left: 18%;}
+/* ---------------------------------------------------------------------------------------------- */
+/* SAYFA4 */
+.sayfa4-title p {font-size: 2.2rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+.form-1 {width: 100%; height: 65vh;}
+.labels {font-size:1.2rem; font-weight: bold; margin-top: 10px;}
+.e-mail-iletisim,.tel-iletisim {font-size: 1.2rem;} }
+/* ---------------------------------------------------------------------------------------------- */
+@media screen and (min-width:992px) and (max-width:1200px)
+{
+/* SAYFA 1 */
+header {display: none;}
+.sayfa1sagHeader {font-size: 2.5rem; }
+.sayfa1sol .nameSurname h2 {font-size: 1.4rem;} .sayfa1sol .sidebar-nav .nav-link {font-size: 1.3rem;}
+.links {margin-top: 40px;}  .sayfa1solEnAlt {margin-top: 10px;}
+/* SAYFA 2 */
+.sayfa2sag_1 .sayfa2sag1_1_1{
+    font-size: .95rem; text-align: center; padding-top: 35px; font-weight: bold; height: 10px;}
+.progress {margin-top: 14.5px;}
+/* ------------------------------------------------------------------------------------------------ */
+.sayfa2sag2_1_1{font-size: 1rem; margin-top:3px; } .sayfa2sag2_1_2 {font-size: 1rem;padding-top:4px;}
+/* ----------------------------------------------------------------------------------------------- */
+.sayfa2sag3_1_1{font-size: 0.9rem;} .sayfa2sag3_1_2 {font-size: 1rem; margin-top: 14px;} .sayfa2sag3_1_3 {font-size: 0.7rem; margin-top: 17px;}
+/* SAYFA3 */
+.sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 43%; flex-basis: 50%; border: 1px dotted rgb(110, 110, 238);}
+.blog-1 p,.blog-2 p,.blog-3 p,.blog-4 p {font-size:1rem;}
+#blog1resimId {height: 80px;margin-left: 10%;}
+/* ---------------------------------------------------------------------------------------------- */
+/* SAYFA4 */
+.sayfa4-title p {font-size: 2.2rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+.form-1 {width: 100%; height: 65vh;}
+.labels {font-size:1.1rem;}
+.e-mail-iletisim { margin-left: 10%;}.tel-iletisim {margin-left: 5%;} }
+/* ---------------------------------------------------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:992px)
+{
+/* SAYFA 1 */
+header {display: none;}
+.sayfa1sagHeader {font-size: 2rem; }
+.sayfa1sol .sidebar-nav .nav-link {font-size: 1.1rem;}
+.links {margin-top: 50px;}  .sayfa1solEnAlt {margin-top: 20px;}
+.sayfa1sol .nameSurname h2 {font-size: 1.4rem;} 
+/* SAYFA 2 */
+.title1 {font-size: 1.4rem;}
+.sayfa2sag_1 .sayfa2sag1_1_1{font-size: 1rem;}
+.sayfa2sag_1 .sayfa2sag1_1_2 {font-size: .92rem;margin-top: 15px; padding: 2px 0px 0px 0px;}
+.progress {margin-top: 14.5px;}
+/* ------------------------------------------------------------------------------------------------ */
+.sayfa2sag2_1_1{font-size: .9rem; margin-top:3px; } .sayfa2sag2_1_2 {font-size: 1rem;padding-top:7px;}
+/* ----------------------------------------------------------------------------------------------- */
+.sayfa2sag3_1_1{font-size: 1rem;} .sayfa2sag3_1_2 {font-size: 0.7rem; margin-top: 14px;} .sayfa2sag3_1_3 {font-size: 0.5rem; margin-top: 17px;}
+/* SAYFA3 */
+.title2 {font-size: 1.3rem;margin-top: 25px;}
+.sayfa3sag .btn2 {margin-left: 14%; font-size: 1.1rem; width: 140px; height: 30px; float: right;}
+.sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 43%; flex-basis: 50%; border: 1px dotted rgb(110, 110, 238);}
+.blog-1 p,.blog-2 p,.blog-3 p,.blog-4 p {font-size:.9rem;} #blog1resimId {height: 80px; width:230px;margin-left: 8%;}
+/* ---------------------------------------------------------------------------------------------- */
+/* SAYFA4 */
+.sayfa4-title p {font-size: 1.6rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+.form-1 {width: 100%; height: 65vh;}
+.labels {font-size:.9rem;}
+.e-mail-iletisim,.tel-iletisim {font-size: 1rem; margin-left: 5%;} }
+/* ---------------------------------------------------------------------------------------------- */
+@media screen and (min-width:584px) and (max-width:768px)
+{
+    .sayfa1sol,.sayfa2sol,.sayfa3sol,.sayfa4sol  {display: none;}
+    header {display: block; position: fixed; width: 100%; z-index: 999;}
+    header nav {position:sticky; top:0px;}
+    .sayfa1sag {flex-basis: 100% !important;}
+    .sayfa2sag {height: 240vh; flex-basis: 100% !important;}
+    .sayfa2sag_1,.sayfa2sag_2,.sayfa2sag_3,.sayfa2sag_4 {height: 20%; flex-basis: 100% !important;border: 1px dotted rgb(110, 110, 238) ; padding: 20px;  background-color: whitesmoke;}
+    .sayfa3sag {height: 240vh; flex-basis: 100%;}
+    .sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 20%; flex-basis: 100% !important; border: 1px dotted rgb(110, 110, 238);}
+    .sayfa4sag {height: 100vh; flex-basis: 100%; background-color: whitesmoke;}
+    /* ----------------------------------------------------------------------------- */
+    /* SAYFA 1 */
+    .brandtitle {font-size: 1.4rem; font-weight: bold;}
+    header nav .collapse ul li a {font-size: 1.2rem;}
+    .sayfa1sagHeader {font-size: 1.5rem; }
+    .sayfa1sol .sidebar-nav .nav-link {font-size: .9rem;}
+    .links {margin-top: 50px;}  .sayfa1solEnAlt {margin-top: 20px;}
+    .sayfa1sol .nameSurname h2 {font-size: 1.3rem;} 
+    /* SAYFA 2 */
+    .title1 {font-size: 1.6rem; margin-top: 25px;}
+    .title-ozgecmis {height: 80px;}
+    .sayfa2sag_1 .sayfa2sag1_1_1{font-size: 1.4rem !important; margin-top: 10% !important; padding: 10% 0% !important;}
+    .sayfa2sag_1 .sayfa2sag1_1_2 {font-size: 1.2rem;margin-top: 5%; padding: 3% 0%;} 
+    .sayfa2sag1_2_1 .dil1 {font-size: 1.3rem;} .progress {margin-top: 20px;}
+    /* ------------------------------------------------------------------------------------------------ */
+    .sayfa2sag2_1_1{font-size: 1.2rem; margin-top:4px;} .sayfa2sag2_1_2 {font-size: 1.2rem;padding-top:3px;}
+    /* ----------------------------------------------------------------------------------------------- */
+    .sayfa2sag3_1_1{font-size: 1.3rem; text-align: center;} .sayfa2sag3_1_2 {font-size: 0.7rem; margin-top: 14px;} .sayfa2sag3_1_3 {font-size: 0.6rem; margin-top: 15px;} .sayfa2sag_1 .egitimTitle{ font-size: 1.3rem !important; } .beceriTitle {font-size: 1.2rem !important;}.deneyimTitle {font-size: 1.3rem !important;}
+    /* SAYFA3 */
+    .title2 {font-size: 1.5rem;margin-top:20px; text-align: left !important; margin-left: 5%;}
+    .sayfa3sag .btn2 {margin-left: 5%; font-size: 1.1rem; width: 130px; height: 30px; float: right;}
+    .blog-1 p,.blog-2 p,.blog-3 p,.blog-4 p {font-size:1.2rem;} #blog1resimId {height: 80px; width:100%;margin: 5% 0%;}
+    /* ---------------------------------------------------------------------------------------------- */
+    /* SAYFA4 */
+    .sayfa4-title p {font-size: 1.4rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+    .sayfa4sag {height: 100vh;}
+    .form-1 {width: 100%; height: 75vh;}
+    .labels {font-size:1rem;}
+    .iletisim-bilgi {display: flex; flex-wrap: wrap;}
+    .e-mail-iletisim {font-size: 1.2rem; flex-basis: 100%; text-align: center; margin-left: 0;}
+    .tel-iletisim {font-size: 1.2rem; flex-basis: 100%; text-align: center; margin-left: 0;}
+}
+/* ------------------------------------------------------------------------------------------------ */
+@media screen and (max-width:584px)
+{
+.sayfa1sol,.sayfa2sol,.sayfa3sol,.sayfa4sol  {display: none;}
+header {display: block; position: fixed; width: 100%; z-index: 999;}
+header nav {position:sticky; top:0px;}
+.sayfa1sag {flex-basis: 100%;}
+.sayfa2sag {height: 240vh; flex-basis: 100%;}
+.sayfa2sag_1,.sayfa2sag_2,.sayfa2sag_3,.sayfa2sag_4 {height: 20%; flex-basis: 100%;border: 1px dotted rgb(110, 110, 238) ; padding: 20px;  background-color: whitesmoke;}
+.sayfa3sag {height: 240vh; flex-basis: 100%;}
+.sayfa3sol_1,.sayfa3sol_2,.sayfa3sag_1,.sayfa3sag_2 { height: 20%; flex-basis: 100%; border: 1px dotted rgb(110, 110, 238);}
+.sayfa4sag {height: 100vh; flex-basis: 100%; background-color: whitesmoke;}
+/* ----------------------------------------------------------------------------- */
+/* SAYFA 1 */
+.brandtitle {font-size: 1.4rem; font-weight: bold;}
+header nav .collapse ul li a {font-size: 1.2rem;}
+.sayfa1sagHeader {font-size: 1.5rem; }
+.sayfa1sol .sidebar-nav .nav-link {font-size: .9rem;}
+.links {margin-top: 50px;}  .sayfa1solEnAlt {margin-top: 20px;}
+.sayfa1sol .nameSurname h2 {font-size: 1.3rem;} 
+/* SAYFA 2 */
+.title1 {font-size: 1.6rem; margin-top: 25px;}
+.title-ozgecmis {height: 80px;}
+.sayfa2sag_1 .sayfa2sag1_1_1{font-size: 1rem; margin-top: 10% !important; padding: 10% 0% !important;}
+.sayfa2sag_1 .sayfa2sag1_1_2 {font-size: 1rem;margin-top: 5%; padding: 3% 0%;}
+/* ------------------------------------------------------------------------------------------------ */
+.sayfa2sag2_1_1{font-size: 1rem; margin-top:-2px;} .sayfa2sag2_1_2 {font-size: 0.9rem;padding-top:3px;}
+/* ----------------------------------------------------------------------------------------------- */
+.sayfa2sag3_1_1{font-size: 1.2rem;} .sayfa2sag3_1_2 {font-size: 1.2rem; margin-top: 14px;} .beceriTitle {font-size: 1.2rem !important;}.deneyimTitle {font-size: 1.3rem !important;}
+/* SAYFA3 */
+.title2 {font-size: 1.4rem;margin-top:20px; text-align: left !important; margin-left: 5%;}
+.sayfa3sag .btn2 {margin-left: 5%; font-size: 1.1rem; width: 130px; height: 30px; float: right;}
+.blog-1 p,.blog-2 p,.blog-3 p,.blog-4 p {font-size:.9rem;} #blog1resimId {height: 80px; width:100%;margin: 5% 0%;}
+.blog1resim4 {width: 50% !important; margin-left: 25% !important;}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* SAYFA4 */
+.sayfa4-title p {font-size: 1.2rem; font-weight: bold ; text-align: center; margin-top: 15px;}
+.sayfa4sag {height: 100vh;}
+.form-1 {width: 100%; height: 75vh;}
+.labels {font-size:1rem;}
+.iletisim-bilgi {display: flex; flex-wrap: wrap;}
+.e-mail-iletisim {font-size: .8rem; flex-basis: 100%; text-align: center; margin-left: 0;}
+.tel-iletisim {font-size: .8rem; flex-basis: 100%; text-align: center; margin-left: 0;}
+}
+
+

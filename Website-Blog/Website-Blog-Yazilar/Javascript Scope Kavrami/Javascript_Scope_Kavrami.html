@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Scope Kavramı</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Website-BlogCSS.css">    
+    <link rel="stylesheet" href="Javascript_Scope_KavramiCSS.css"> 
+<script type="text/javascript" src="../../../js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a class="en_uste_cik" type="button" href="#"></a>
+    <header>
+        <!-- NAVIGATOR -->
+        <nav class="navbar sticky-top navbar-primary navbar-expand-md bg-secondary nav-fill nav-tabs" id="navbar-1">
+         <!-- BRAND -->
+         <span class="navbar-brand h1">
+         <span class="brandtitle" id="brandId"><img src="../../../img/S.png" width="35px" height="35px"> BLOG</span>
+         </span>
+         <!-- BUTTON -->
+         <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse" data-target="#navbarMenu">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- ITEMS -->
+         <div class="collapse navbar-collapse" id="navbarMenu">
+         <ul class="navbar-nav nav-primary bg-secondary h5">
+         <li class="nav-item"><a href="../Blog-Web.html" class="nav-link">Ana Sayfa</a></li>
+         <li class="nav-item"><a href="../../Website-Blog-Basliklar.html" class="nav-link">Başlıklar</a></li>
+         </ul>
+         </div>
+         <span id="date1"></span>
+     </nav>
+     </header>  
+    <section id="sectionA">
+        <div class="container-fluid sayfa1">
+            <!-- BASLIK -->
+            <div class="row baslik-alani">
+                <div class="col-12 col-sm-12 baslik">
+                    <h1>Javascript Scope Kavramı</h1>
+                </div>
+            </div>
+            <!-- RESIM -->
+            <div class="row resim-alani">
+                <div class="col-2"></div>
+                <div class="col-8 col-sm-8 baslik-resim">
+                    <img src="../../../img/Blog-2-resim.jpeg" id="baslik-resim1">
+                </div>
+                <div class="col-2 col-sm-2"></div>
+            </div>
+            <!-- PARAGRAF1 -->
+            <div class="row paragrafAlani">
+                <div class="col-2"></div>
+                <div class="col-8 col-sm-8 paragraf">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 yazi">
+                            <p><strong>Scope(Kapsam) nedir ?</strong></p>
+                            <p>Block Scope ve Function Scope.</p>
+                            <p><strong>Scope türleri nelerdir?</strong></p>
+                            <p>Global Scope ve Local Scope olmak üzere iki türü vardır. Local scope ise kendi içinde ikiye ayrılır; </p>
+                            <p>Block Scope ve Function Scope.</p>
+                            <p><u><strong>Global Scope</strong></u> : Fonksiyonların ya da for, if veya while bloklarının dışında tanımlanan değişkenlere sahip olan scope türüdür.</p>
+                            <p><u><strong>Local Scope</strong></u> : Global Scope içerisinde belirtilen yapılarda tanımlanmış ve sadece tanımlandığı alan içerisinden ulaşılabilen değişkenlerin sahip olduğu scope türüdür.</p>
+                            <p>Örnek üzerinden gidecek olursak ;</p>
+                        </div>
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-1.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="col-12 col-sm-12 yazi">
+                            Burada değişken olarak Global Scope içerisinde x değişkenini 30 olarak aldık. Ancak Function Scope içerisinde x değişkeni 0 olarak atanmıştır. Function, if, for, while gibi bloklarda Local Scope olarak aldığı için p1 içerisine x değeri 0 olarak girilecektir.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-2.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            Burada ise Global Scope içerisinde x değişkeni 30 olarak verilmiştir. Function Local Scope içerisinde ise x değişkeni 0 olarak atanmıştır. Ancak burada p1 içerisine x değeri 30 olarak atanacaktır çünkü x=0 ataması sadece Function Local Scope’u içerisinde gerçekleşir.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-3.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            Block Scope içerisinde daha önce tanımlanmamış bir değişkene değer ataması yapabiliriz. Bu durumda bu değer Global Scope içerisinde olarak algılanır. Yukarıda görüldüğü gibi Function Scope içerisinde x=0 olarak atama yapılmıştır ancak Function Scope dışında bu değer kullanılmıştır.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-4.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            ES6 ile birlikte gelen let veya const ile tanımlanan değişkenler Function Scope yerine Block Scope içerisinde yer alırlar. Ayrıca değişkenin aynı isimle yeniden tanımlanmasında var değişkeni ile izin verilirken diğerlerinde buna izin verilmez. Sabit değerler için const kullanılır ve bununla tanımlanan değerlerin değiştirilmesi istenmez. Yukarıdaki örnekte p1 içerisine sonuç olarak 10 yazacaktır.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-5.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            Yukarıdaki örnekte ise var değişkeni ile yeniden tanımlanmıştır ve p1 içerisine sonuç olarak 2 değeri verilir.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-6.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            Yukarıda const ile sabit bir katsayı atadık. Daha sonra bu katsayıyı 4 ile değiştirmek istediğimizde TypeError hatası alırız.
+                        </div>  
+                        <div class="col-12 col-sm-12 ic-resim">
+                            <div class="col-10 col-sm-10 offset-1 ic-resim">
+                                <img src="../../../img/scope-7.png" class="resim-5x" id="scope-1">
+                            </div>
+                            <div class="col-1"></div>
+                        </div> 
+                        <div class="col-12 col-sm-12 yazi">
+                            Yukarıdaki örnekte ise var ile değişkenimizin değerini birden fazla kez değiştirebiliriz ancak let a=8 izin verilmeyecektir çünkü let ile birden fazla tanımlamaya izin verilmemektedir. Burada eğer yorum satırlarından herhangi biri aktif edilirse Syntax Error alırız.
+                        </div> 
+                    </div>
+                    
+                </div>
+                <div class="col-2"></div>
+            </div>
+            </div>
+        </section>
+<script type="text/javascript" src="../../../js/Website14_Blog.js"></script>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 footer1">
+             <p>&copy;2021 - created by Serhat Ayata</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* GENEL KODLAR */
+body {background-color:whitesmoke;}
+html {scroll-behavior:smooth;}
+.en_uste_cik{
+  background: url(../img/Yukari.jpg) center center no-repeat; 
+  background-size: cover; 
+  height: 50px; width: 50px; 
+  position: fixed;
+  bottom:20px; left:20px;
+  border-radius: 100px;
+  z-index: 900;
+}
+.resim-2x {height: 80px !important;}
+.resim-3x {height: 100px !important;}
+.resim-5x{height: 140px !important;}
+.footer1 {
+  height: 25px; 
+  background-color: grey; 
+  text-align: center; 
+  font-weight: bold; 
+  border: 1px solid black; 
+  margin-top: 10px; 
+}
+.en_uste_cik {display: block;}
+.btn-paragraf {margin: 20px 0px;}
+#date1 {font-size: 30px; font-weight: bold; float: right; color: black;}
+.paragrafTarihi {text-align: center; text-decoration: underline;font-size: 26px; margin-top: 35px;}
+.nav-link {color: black; margin-left: 20px;}
+/* ----------------------------------------------------------------------- */
+header {position:sticky; top:0; z-index:999}
+/* SAYFA1 */
+#sectionA {
+    padding: 0px 200px;
+}
+#sectionA .sayfa1 {
+  height: auto;
+  background-color: rgb(221, 220, 220);
+  border: 2px solid black;
+  margin-top: 60px;
+}
+#sectionA .yazi {text-align: justify; margin: 30px 0px;}
+#sectionA .baslik-alani {
+  margin-top: 40px;
+}
+#sectionA .baslik {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: blue;}
+#sectionA .sayfa1 .resim-alani {
+    margin-top: 30px;}
+#sectionA .sayfa1 .resim-alani .baslik-resim img {
+    height: 200px; width: 100%;
+}
+#sectionA .sayfa1 .paragrafAlani .paragraf .row {
+  overflow: hidden;
+  height: auto;
+}
+#sectionA .sayfa1 .paragrafAlani .paragraf .row div img {
+  height: 100px; width: 100%; 
+}
+/* ----------------------------------------------------------------------------------- */
+@media screen and (min-width:992px) and (max-width:1360px) {
+  .en_uste_cik {display: block;}
+#sectionA .baslik h1 {
+  font-size: 30px;    
+}
+#sectionA .sayfa1 .resim-alani .baslik-resim img {
+  height: 150px; width: 100%;
+}
+#sectionA .sayfa1 {
+  font-size: 14px;
+}
+}
+/* --------------------------------------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:992px) {
+  .en_uste_cik {display: block;}
+  #sectionA {
+    padding: 0px 100px;
+}
+  #sectionA .baslik h1 {
+    font-size: 25px;    
+  }
+  #sectionA .sayfa1 .resim-alani .baslik-resim img {
+    height: 130px; width: 100%;
+  }
+  #sectionA .sayfa1 {
+    font-size: 14px;
+  }
+}
+/* --------------------------------------------------------------------------------- */
+@media screen and (min-width:584px) and (max-width:768px) {
+  .en_uste_cik {display: none;}
+  .nav-link {font-size: 18px;}
+  #date1 {display: none;}
+  #sectionA {
+    padding: 0px 50px;
+}
+  #sectionA .baslik h1 {
+    font-size: 20px;    
+  }
+  #sectionA .sayfa1 .resim-alani .baslik-resim img {
+    height: 80px; width: 100%;
+  }
+  #sectionA .sayfa1 {
+    font-size: 12px;
+  }
+}
+#sectionA .paragrafAlani .btn {font-size: 12px;}
+#sectionA .sayfa1 .paragrafAlani .paragraf .row .ic-resim img {height: 80px; margin-bottom: 10px;}
+.footer1 {
+  font-size: 12px; height: 20px;
+}
+/* ----------------------------------------------------------------------------------------- */
+@media screen and (max-width:584px) 
+{
+  .en_uste_cik {display: none;}
+  .navbar-toggler {
+    width: 50px; height: 40px;
+  }
+  .navbar-toggler-icon{
+    width: 20px; height: 20px;
+  }
+  #sectionA .sayfa1 {
+    margin-top: 30px;
+  }
+  .nav-link {font-size: 15px; color: black;}
+  nav ul li { border-bottom: 1px solid black}
+  #date1 {display: none;}
+  #sectionA {
+    padding: 0px 20px;
+}
+  #sectionA .baslik h1 {
+    font-size: 18px;    
+  }
+  #sectionA .sayfa1 .resim-alani .baslik-resim img {
+    height: 70px; width: 100%;
+  }
+  #sectionA .sayfa1 {
+    font-size: 11px;
+  }
+}
+#sectionA .paragrafAlani .btn {font-size: 12px;}
+#sectionA .sayfa1 .paragrafAlani .paragraf .row .ic-resim img {height: 60px;}
+.footer1 {
+  font-size: 12px; height: 20px;
+}
+

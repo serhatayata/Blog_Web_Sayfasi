@@ -1,0 +1,5 @@
+@media screen and (max-width:768px) {
+    .resim-5x {height: 80px !important;}
+    .resim-3x {height: 70px !important;}
+    .resim-2x {height: 60px !important;}
+}

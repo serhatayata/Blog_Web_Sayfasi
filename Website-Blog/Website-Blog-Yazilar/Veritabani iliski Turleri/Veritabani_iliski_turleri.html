@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritabani Iliski Turleri</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Website-BlogCSS.css">   
+    <link rel="stylesheet" href="Veritabani_iliski_turleriCSS.css">     
+<script type="text/javascript" src="../../../js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a class="en_uste_cik" type="button" href="#"></a>
+    <header>
+        <!-- NAVIGATOR -->
+        <nav class="navbar sticky-top navbar-primary navbar-expand-md bg-secondary nav-fill nav-tabs" id="navbar-1">
+         <!-- BRAND -->
+         <span class="navbar-brand h1">
+         <span class="brandtitle" id="brandId"><img src="../../../img/S.png" width="35px" height="35px"> BLOG</span>
+         </span>
+         <!-- BUTTON -->
+         <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse" data-target="#navbarMenu">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- ITEMS -->
+         <div class="collapse navbar-collapse" id="navbarMenu">
+         <ul class="navbar-nav nav-primary bg-secondary h5">
+         <li class="nav-item"><a href="../../../Blog-Web.html" class="nav-link">Ana Sayfa</a></li>
+         <li class="nav-item"><a href="../../Website-Blog-Basliklar.html" class="nav-link">Başlıklar</a></li>
+         </ul>
+         </div>
+         <span id="date1"></span>
+     </nav>
+     </header>  
+    <section id="sectionA">
+        <!-- SAYFA1 -->
+        <div class="container-fluid sayfa1">
+            <!-- BASLIK -->
+            <div class="row baslik-alani">
+                <div class="col-12 col-sm-12 baslik">
+                    <h1>Veritabanı İlişki Türleri</h1>
+                </div>
+            </div>
+            <!-- RESIM -->
+            <div class="row resim-alani">
+                <div class="col-2"></div>
+                <div class="col-8 col-sm-8 baslik-resim">
+                    <img src="../../../img/Blog-3-resim.jpeg" id="baslik-resim1">
+                </div>
+                <div class="col-2 col-sm-2"></div>
+            </div>
+            <!-- PARAGRAF1 -->
+            <div class="row paragrafAlani">
+                <div class="col-2"></div>
+                <div class="col-8 col-sm-8 paragraf">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 yazi">
+                            <p>Bu yazımda veri tabanı ilişki türlerini anlatmaya çalıştım.</p>
+                            <p>Bu yazıyı okumadan önce Primary Key ve Foreign Key kavramları hakkında bilgi edinmenizi tavsiye ederim.</p> 
+                            <p>İyi okumalar.</p>
+                            <p><strong>Üç adet ilişki tipi bulunmaktadır;</strong></p>
+                            <p>Bire-bir ilişki, Bire-çok ilişki(1-n) ve Çoka-çok ilişki(n-m).</p>
+                            <p><u><strong>Bire-bir İlişki</strong></u></p>
+                            <p>Örneğin bir futbol müsabakasında bilet satışı yapılacak ve bunun için bir otomasyon geliştirilecek. Her bileti yalnızca bir kişi satın alabilir. Elimizde 2 adet tablo bulunmaktadır. Birinci tabloda seyirci bilgileri, ikinci tablomuz ise bilet tablosu olsun. Bu iki tablo arasında 1'e 1 ilişki bulunmaktadır. Her bilet yalnızca bir kişiye satılabilir ve her müşteri yalnızca bir bilet satın alabilir. Hangi tablodan diğerine ekleme yapacağımız konusu ise, mesela bilet tablosu içerisinde seyirci_bilgileri_Id eklersem, satılmayan biletler için bu kısım Null olacaktır. Eğer seyirci bilgileri tablosuna bilet_Id eklersem her seyirci için istenilen bilet_Id görülecektir ve Null değer olmayacaktır. Aşağıdaki şekillerde Bilet tablosu, seyirci tablosu ve bunların veri tabanı diyagramı gösterilmiştir.</p>
+                            <div class="col-12 col-sm-12 ic-resim">
+                                <img src="../../../img/iliski-1.png" class="resim-5x" id="hoisting-1">
+                            </div>
+                            <p><u><strong>Bire-Çok İlişki</strong></u></p>
+                            <p>Örneğin bir futbol müsabakasında bilet satışı yapılacak ve bunun için bir otomasyon geliştirilecek. Her bileti yalnızca bir kişi satın alabilir. Elimizde 2 adet tablo bulunmaktadır. Birinci tabloda seyirci bilgileri, ikinci tablomuz ise bilet tablosu olsun. Bu iki tablo arasında 1'e 1 ilişki bulunmaktadır. Her bilet yalnızca bir kişiye satılabilir ve her müşteri yalnızca bir bilet satın alabilir. Hangi tablodan diğerine ekleme yapacağımız konusu ise, mesela bilet tablosu içerisinde seyirci_bilgileri_Id eklersem, satılmayan biletler için bu kısım Null olacaktır. Eğer seyirci bilgileri tablosuna bilet_Id eklersem her seyirci için istenilen bilet_Id görülecektir ve Null değer olmayacaktır. Aşağıdaki şekillerde Bilet tablosu, seyirci tablosu ve bunların veri tabanı diyagramı gösterilmiştir.</p>
+                            <div class="col-12 col-sm-12 ic-resim">
+                                <img src="../../../img/iliski-1.png" class="resim-5x" id="hoisting-1">
+                            </div>
+                            <p><u><strong>Çoka-Çok İlişki</strong></u></p>
+                            <p>Örneğin bir futbol müsabakasında bilet satışı yapılacak ve bunun için bir otomasyon geliştirilecek. Her bileti yalnızca bir kişi satın alabilir. Elimizde 2 adet tablo bulunmaktadır. Birinci tabloda seyirci bilgileri, ikinci tablomuz ise bilet tablosu olsun. Bu iki tablo arasında 1'e 1 ilişki bulunmaktadır. Her bilet yalnızca bir kişiye satılabilir ve her müşteri yalnızca bir bilet satın alabilir. Hangi tablodan diğerine ekleme yapacağımız konusu ise, mesela bilet tablosu içerisinde seyirci_bilgileri_Id eklersem, satılmayan biletler için bu kısım Null olacaktır. Eğer seyirci bilgileri tablosuna bilet_Id eklersem her seyirci için istenilen bilet_Id görülecektir ve Null değer olmayacaktır. Aşağıdaki şekillerde Bilet tablosu, seyirci tablosu ve bunların veri tabanı diyagramı gösterilmiştir.</p>
+                            <div class="col-12 col-sm-12 ic-resim">
+                                <img src="../../../img/iliski-1.png" class="resim-5x" id="hoisting-1">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            </div>
+        </section>
+<script type="text/javascript" src="../../../js/Website14_Blog.js"></script>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 footer1">
+             <p>&copy;2021 - created by Serhat Ayata</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

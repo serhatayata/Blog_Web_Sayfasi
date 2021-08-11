@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Nedir ve Nasıl Kullanılır?</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Website-BlogCSS.css">    
+    <link rel="stylesheet" href="SQL_NedirCSS.css">   
+<script type="text/javascript" src="../../../js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a class="en_uste_cik" type="button" href="#"></a>
+    <header>
+        <!-- NAVIGATOR -->
+        <nav class="navbar sticky-top navbar-primary navbar-expand-md bg-secondary nav-fill nav-tabs" id="navbar-1">
+         <!-- BRAND -->
+         <span class="navbar-brand h1">
+         <span class="brandtitle" id="brandId"><img src="../../../img/S.png" width="35px" height="35px"> BLOG</span>
+         </span>
+         <!-- BUTTON -->
+         <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse" data-target="#navbarMenu">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- ITEMS -->
+         <div class="collapse navbar-collapse" id="navbarMenu">
+         <ul class="navbar-nav nav-primary bg-secondary h5">
+         <li class="nav-item"><a href="../../../Blog-Web.html" class="nav-link">Ana Sayfa</a></li>
+         <li class="nav-item"><a href="../../Website-Blog-Basliklar.html" class="nav-link">Başlıklar</a></li>
+         </ul>
+         </div>
+         <span id="date1"></span>
+     </nav>
+     </header>  
+    <!-- SAYFA5 -->
+<section id="sectionA">
+<div class="container-fluid sayfa1">
+    <!-- BASLIK -->
+    <div class="row baslik-alani">
+        <div class="col-12 col-sm-12 baslik">
+            <h1>SQL Nedir ve Nasıl Kullanılır?</h1>
+        </div>
+    </div>
+    <!-- RESIM -->
+    <div class="row resim-alani">
+        <div class="col-3"></div>
+        <div class="col-6 col-sm-6 baslik-resim">
+            <img src="../../../img/Blog-5-resim.jpeg" id="baslik-resim1">
+        </div>
+        <div class="col-3 col-sm-3"></div>
+    </div>
+    <!-- PARAGRAF1 -->
+    <div class="row paragrafAlani">
+        <div class="col-2"></div>
+        <div class="col-8 col-sm-8 paragraf">
+            <div class="row">
+                <div class="col-12 col-sm-12 yazi">
+                    <p>SQL (Structured Query Language) kullanımı veri tabanı olarak değil, veritabanının içindeki düzenleyicilerden bir tanesi olarak kullanılmaktadır. SQL kullanımının amacı, veritabanı içerisinde yer alan verilerin düzene koyulması ve kolay şekilde yönetilmesini sağlamaktadır.</p>
+                    <p><strong>SQL Kullanımının Avantajları ve Özellikleri</strong></p>
+                    <ul>
+                        <li>Kullanıcıların kolaylıkla verilere erişmesini sağlamaktadır.</li>
+                        <li>Veriler için açıklama hazırlanmasına ve kolayca kategorize edilmelerine izin vermektedir.</li>
+                        <li>Kullanıcılarının, veriler üzerinde değişiklik yapmaları için farklı sistemlere sahiptir ve bu sistemler sayesinde, veriler her zaman güncel tutulur.</li>
+                        <li>SQL veritabanı uygulaması, tescilli şekilde hazırlanmıştır ve açık kaynak olarak hizmet vermektedir.</li>
+                    </ul>
+                    <p><u><strong>SQL Server Management Studio Kullanımı Nasıl Olmalıdır?</strong></u></p>
+                    <p>SQL Server programı üzerinden, SQL sunucusuna erişilmek ve bu veritabanı üzerinden gerekli işlemleri gerçekleştirmek mümkündür. Başlat menüsü üzerinden program çalıştırıldıktan sonra “Connect to Server” ekranı açılmaktadır. “Server Name” kısmı üzerinden bağlantı kurulmak istenen sunucu modeli seçilmelidir. Sunucu seçimi yapıldıktan sonra, “Windows Authentication” yönetimi tercih edilmelidir. “Connect” butonuna tıklandıktan sonra, bilgisayar üzerinden SQL sunucusuna erişim sağlanmaktadır.</p>
+                    <p><u><strong>SQL Server Veritabanı Oluşturmak İçin Yapılması Gerekenler</strong></u></p>
+                    <p>SQL sunucusunda yer alan nesnelerin tamamına erişim sağlamak için sol panelde yer alan Object Explorer bölümü kullanılmaktadır. Panelde yer alan “Databases” simgesi üzerine iki defa tıklandığı yer, bağlı bulunan sunucu üzerindeki veritabanının tamamının yer aldığı bir liste sıralanacaktır. Erişilmek istenen veritabanı seçimi yapıldıktan sonra, veritabanı üzerine çift tıklanmalıdır. Eğer sıfırdan veritabanı oluşturulacaksa “Databases” simgesinin üzerine çift tıkladıktan sonra “New Database” bölümü üzerinden talimat verilmelidir. Açılacak pencere üzerinden “Database Name” seçimi yapıldıktan sonra veritabanının ismi yazılmalı ve “Ok” butonuna tıklanmalıdır.
+                    </p>
+                    <p><u><strong>SQL Yazılımlarının Türleri ve Özellikleri Nelerdir?</strong></u></p>
+                    <ul>
+                        <li>MySQL : Oracle isimli firma tarafından üretilmiştir. Bugün için en fazla tercih edilen SQL yazılım modeli arasında yer almaktadır. Açık kaynak kodlarına sahiptir ve tüm lisansları ücretsizdir. MySQL, çifte lisansa sahiptir ve sahip olduğu ikinci lisans modeli GPL lisansıdır.</li>
+                        <li><u><strong>MSSQL</strong></u> : Ücretli olarak tasarlanmış lisans türüdür. Hosting firmaları, talep edilen ücretleri karşılamaktadır. .NET ya da ASP dilleriyle üretilen internet siteleri için idealdir.</li>
+                        <li><u><strong>Microsoft SQL Server</strong></u> : Microsoft tarafından geliştirilen sunucu yazılımı modelidir. Program kapalı kaldığı süreler içerisinde, herhangi bir sorun oluşturma ve tüm yazılım planlamalarını kendi başına devam ettirir.</li>
+                        <li><u><strong>Firebird</strong></u>: İçerisindeyer alan Alert özelliği sayesinde veritabanında bulunan tabloların tüm hatalarını düzeltmektedir. Tablolardaki farklılıkların düzenlenmesi için farklı yazılımların kullanılmasına gerek kalmaz. Türkçe dil desteği bulunur ve hizmetlerinin tamamı ücretsizdir.</li>
+                        <li><u><strong>Access</strong></u> : Microsoft tarafından geliştirilen veritabanı modellerinden bir tanesidir. Çoğunlukla mikro ölçekli uygulamaların geliştirilmesinde kullanılmasında kullanılmaktadır. Mobil uyumludur ve taşınabilir bir sisteme sahiptir. SQL yazılımına sahip olmayan kişilerin, veritabanı içinde yer alan raporlara erişimine izin vermektedir.</li><br>
+                        <p>SQL çeşitleri arasından en uygun model seçildikten sonra, lisans anlaşması yapılmalı ve veritabanı yüklemeleri gerçekleştirilmelidir.</p>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    </div>
+        </section>
+<script type="text/javascript" src="../../../js/Website14_Blog.js"></script>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 footer1">
+             <p>&copy;2021 - created by Serhat Ayata</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
