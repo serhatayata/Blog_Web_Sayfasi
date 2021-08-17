@@ -1,0 +1,69 @@
+/* GENEL KODLAR */
+body {box-sizing: border-box;}
+
+/* ---------- */
+.uyelik_ic_sayfa {
+    padding: 30px;
+    background-color: whitesmoke;
+}
+.uyelik_ic_sayfa .baslik {
+    text-align: center;
+}
+.uyelik_sol_sayfa .uyelik_sol_icerik {
+  padding:20px
+}
+.footer1 {
+    font-size: 12px; height: 20px;
+    text-align: center;
+    background-color: grey;
+  }
+#date1 {
+    font-size: 30px; 
+    font-weight: bold; 
+    float: right; 
+    color: black;
+}
+/* ---------------------------------------------------------------- */
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .uyelik_sol_icerik a {
+      font-size:  .8rem!important;
+  }
+  label,button.btn,input.form-control {font-size: .8rem;}
+  .uyelik_ic_sayfa .baslik h2 {
+      font-size: 1.5rem;
+  }
+  .brandtitle,.nav-item{font-size: 1rem;}
+   #date1 {font-size: 1.5rem;}
+}
+/* ---------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .uyelik_sol_icerik a {
+      font-size:  .7rem!important;
+  }
+  label,button.btn,input.form-control {font-size: .7rem;}
+  .uyelik_ic_sayfa .baslik h2 {
+      font-size: 1.3rem;
+  }
+  .brandtitle,.nav-item{font-size: 1rem;}
+   #date1 {font-size: 1.3rem;}
+}
+/* ---------------------------------------------- */
+@media screen and (max-width:768px) {
+    .uyelik_sol_sayfa {display: none;}
+    .uyelik_sol_icerik a {
+      font-size:  .7rem!important;
+  }
+  label,button.btn,input.form-control {font-size: .7rem;}
+  .uyelik_ic_sayfa .baslik h2 {
+      font-size: 1.2rem;
+  }
+  .brandtitle,.nav-item{font-size: .9rem;}
+   #date1 {display: none;}
+}
+
+
+
+
+
+
+
